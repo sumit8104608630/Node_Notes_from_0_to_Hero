@@ -1,0 +1,24 @@
+there are five  major status code range 
+ 1. 100 to 199
+ 2. 200 to 299
+ 3. 300 to 399
+ 4. 400 to 499
+ 5. 500 to 599
+
+ 1. 100:-  This interim response indicates that the client should continue the request or ignore the response if the request is already finished.
+ 102:-This code is sent in response to an Upgrade request header from the client and indicates the protocol the server is switching to.
+
+ 2. 200 to 299 :- it indicate the success status code 
+ 202 represent the post request is successfully completed it's good practice to give status code 
+
+ 3. 300 to 399 :- it indicate the redirection status code
+ 301 represent the post request is permanently moved to another location
+
+ 4. 400 to 499 :- it indicate the client error status code it's client side error 
+ 404 is represent the incorrect url 
+
+ 5. 500 to 599 :- it indicate the server error status code it's server side error
+ make sure you never get this type of error in production level
+
+ 
+this are the main status code
