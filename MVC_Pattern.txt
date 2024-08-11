@@ -1,0 +1,39 @@
+ let's see how to maintain your code like industry level
+ file structure is important part of our code
+ 
+ there are six main directory 
+ 1.controller 
+ 2.model
+ 3.routes
+ 4.views
+ 5.public
+ 6.MiddleWare
+
+ controller :- Purpose: The controller directory contains the logic that handles incoming requests and sends responses to the client.
+                 Controllers act as intermediaries between the model and the view. They process the data from the models and pass it to
+                 the views or handle the business logic of your application.
+
+               Examples: Functions to handle user registration, login, or processing payments.
+
+ Model :- Purpose: The model directory contains all the database schemas and models. In a MERN stack, this typically involves defining
+             Mongoose schemas that map to MongoDB collections. Models define the structure of your data, including fields and data types,
+             and provide an interface for interacting with the database.
+          
+          Examples: User schema, product schema, or order schema.
+
+ Routes :- Purpose: The routes directory defines the endpoints (routes) of your application. Each route maps to a controller function that
+             handles the logic for that endpoint. The routes directory keeps all your API endpoints organized and separate from the logic.
+          
+           Examples: Routes for user authentication, product listings, or order processing.
+
+ View :- Purpose: In a traditional server-rendered application, the views directory would contain the templates (e.g., HTML, EJS) that are rendered 
+         on the server and sent to the client. However, in a MERN stack application, where React handles the front-end, this directory is often less
+          relevant unless you're doing server-side rendering (SSR).
+         
+         Examples: EJS templates, Pug templates, or other view templates (if not using React for all front-end rendering).
+
+ Public :- Purpose: The public directory holds static assets that are accessible directly by the client. These assets include images,
+             CSS files, JavaScript files, and other resources that don’t require server-side processing before being sent to the client.
+          
+             Examples: CSS files, client-side JavaScript files, fonts, or images.
+
