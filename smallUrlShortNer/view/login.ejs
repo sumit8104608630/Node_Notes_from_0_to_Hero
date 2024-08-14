@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login In</title>
+    <style>
+     body {
+    font-family: Arial, sans-serif;
+    background-color: #d2ffd7; /* Light teal background */
+    color: #09681f; /* Dark teal text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    background-color: #ffffff; /* White background for the form container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007910; /* Teal color for the heading */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #034d00; /* Dark teal for labels */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #b3dfb2; /* Light teal border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #006b14; /* Dark teal on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(20, 150, 0, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00a72c; /* Green button background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00881d; /* Darker green on hover */
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Log In</h1>
+        <div>
+        <form method="post" action="/user/login">
+            <div>
+                <label for="Email">Email:</label>
+                <input type="email" name="email" placeholder="xyz@gmail.com">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="password" placeholder="Password">
+            </div>
+            <div>
+                <button>Log In</button>
+            </div>
+        </form>
+        </div>
+    </main>
+</body>
+</html>

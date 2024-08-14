@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #004d40;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #66bb6a;
+    outline: none;
+    background-color: #e0f7fa;
+}
+
+button {
+    background-color: #007924;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #004d2f;
+    transform: scale(1.02);
+}
+h1{
+    text-align: center;
+}
+@media (max-width: 600px) {
+    main {
+        padding: 20px;
+    }
+
+    form {
+        gap: 15px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Sign In</h1>
+        <div>
+        <form method="post" action="/user">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" placeholder="Full Name">
+            </div>
+            <div>
+                <label for="Email">Email:</label>
+                <input type="email" name="email" placeholder="xyz@gmail.com">
+            </div>
+            <div>
+                <label for="password">Password :</label>
+                <input type="password" name="password" placeholder="Password">
+            </div>
+            <div>
+                <button>Sign In</button>
+            </div>
+        </form>
+        </div>
+    </main>
+</body>
+</html>

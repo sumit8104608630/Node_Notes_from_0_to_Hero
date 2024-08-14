@@ -1,0 +1,11 @@
+let's see how we use ssr in express 
+basically ssr is server side rendering which give response as html file 
+there are multiple tool for that but we will focus to EJS (Embedded javascript template)
+first we will install the ejs in our application using command npm i ejs
+after that we set the ejs in our main application in node using  app.set("view engine","ejs")
+then we will create a new file in our view folder and name it as index.ejs and write the html code 
+we will also give path of our file to our express by initializing path 
+app.set("view,path of file)
+
+
+*IMP it is important which should be mark banked se jo data ata hai vo local me save hota hai
