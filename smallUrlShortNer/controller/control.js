@@ -3,7 +3,8 @@ const url =require("../Model/model")
 const user=require("../Model/userModel")
 //const nanoId=require("nanoid")
 const {setUser,getUser}=require("../service/auth")
-const {v4:uuidv4}=require("uuid")
+const {v4:uuidv4}=require("uuid");
+const { Domain } = require("domain");
 
 
 const nanoId=(len)=>{
@@ -60,9 +61,10 @@ async function handelLogin(req,res) {
       return  res.render("login")
     }
     else{
-        const sessionId=uuidv4();
-        setUser(sessionId,users)
-        res.cookie("uid",sessionId);
+     const  token=  setUser(users)
+        res.cookie("uid",token,{
+            domain:".urbancompany.com",
+        });
        return res.redirect("/");
        
     }
