@@ -62,9 +62,7 @@ async function handelLogin(req,res) {
     }
     else{
      const  token=  setUser(users)
-        res.cookie("uid",token,{
-            domain:".urbancompany.com",
-        });
+        res.cookie("uid",token);
        return res.redirect("/");
        
     }
@@ -74,5 +72,5 @@ module.exports={
     handelPost, 
     handelGet,
     handelSignIn,
-    handelLogin,
+    handelLogin, 
 }
