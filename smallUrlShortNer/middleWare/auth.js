@@ -12,14 +12,14 @@ async function restrictToLoggedInUserOnly(req,res,next) {
 }
 
 function restrictTo(role=[]){
-return function (req,res,next){
+return  (req,res,next)=>{
     console.log("it also check auth")
    // const userUid=req.cookies?.uid;
     if(!req.user)return res.redirect("/login")
     if(!role.includes(req.user.role)) return res.end("unAuthorized");
 
    // req.user=user 
-  return  next()
+  return  next();
 }
 }
 module.exports={

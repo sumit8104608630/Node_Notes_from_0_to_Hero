@@ -1,0 +1,5 @@
+let's start with the JWT to fulfill the stateless Authentication in node js
+JWT (json web token)
+we keep the state into payload
+so that it can readable for any one but it cannot change by any one
+that's why we use JWT (json web token)

@@ -18,7 +18,7 @@ Lets get start with MongoDB
 * to access all collection we use command :- show collections
 * to access all document we use command :- db.collection_name.find()
 * if you want to use existing database jus write use database database_name
-* to see all dat inside the data base we use command :- db.users.find({}) 
+* to see all dat inside the data base we use command :- db.databaseName in  plural form.find({}) 
 * to insert the data we use command :- db.databaseName.insert({})
 * to delete the data we use command :- db.databaseName.remove({})
 

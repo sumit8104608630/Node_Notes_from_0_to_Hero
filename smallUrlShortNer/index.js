@@ -29,8 +29,8 @@ app.use(restrictToLoggedInUserOnly);
 
 
 
-app.use("/",restrictTo(["NORMAL"]),uiRouter);
-app.use("/url",route); 
+app.use("/",uiRouter);
+app.use("/url",restrictTo(["NORMAL","ADMIN"]),route); 
 app.use("/user",userRouter)   
 
 async function  data(){

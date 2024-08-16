@@ -22,4 +22,4 @@ fs.readFile("./txt.txt","utf16le",(res,rej)=>{
 console.log(fs.statSync("./txt.txt"))
 
 const cpu=require("os");
-console.log(cpu.hostname());
+console.log(cpu.hostname()); 

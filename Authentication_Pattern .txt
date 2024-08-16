@@ -1,0 +1,9 @@
+let's study node authentication pattern there are two type of pattern in node authentication
+1. stateFull 
+2. stateless
+
+stateFull :- which maintains state or data on server side it generate new session every time whenever the server is restarted
+stateless :- which does not maintain state or data or server side
+
+ cookies-parser= is used to get cookies from server
+ in stateful it  have dis advantage whenever the server get restart it logout all user automatically
