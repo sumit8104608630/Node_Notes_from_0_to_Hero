@@ -29,7 +29,7 @@ app.use(restrictToLoggedInUserOnly);
 
 
 
-app.use("/",restrictTo("NORMAL"),uiRouter);
+app.use("/",restrictTo(["NORMAL"]),uiRouter);
 app.use("/url",route); 
 app.use("/user",userRouter)   
 
@@ -37,7 +37,7 @@ async function  data(){
 await url.find({}) 
 }
 data()
-const port =9000;  
+const port=9000;  
  
 app.listen(port ,()=>{
     console.log(`server is running on port ${port}`)
